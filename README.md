@@ -3,7 +3,7 @@ Create data pipelines with open-source software that handle data processes, make
 The version of Apache Airflow (3.1.6)<br>
 The project continues to create data pipelines with python only.
 
-<br><br>
+<br>
 
 ---
 
@@ -11,7 +11,7 @@ The project continues to create data pipelines with python only.
 > **Warning:** the scenario is fake.
 “Infath” decided at end 2025 to gather all data into one database to analysis them and make better decisions for 2026 In Sha Allah. The problem is data stored into many places, so the team just want to gather data into 2 places: online and in-person, at this time it needs to create daily scheduled data pipeline that is based on ETL process.
 
-<br><br>
+<br>
 
 ---
 ## Data Flow Diagram
@@ -28,12 +28,13 @@ The project consists of ETL process, get benefit from abilities of Apache Airflo
 -	**Transform:** Check from null values and fill them, the string filled by “none” or “لا يوجد”, number of estates, assets, total sales by the median of data because they have outliers (no nature distribution), the year filled by 2025, and quarter by zero (not sure it related to which quarter of 2025, that may lead to some conflicts, for example: if the unknown quarter has high total sell, then it may lead to affect to the data related to same quarter, the main problem here is that get wrong analysis with unwisdom decision). Also normalize data to have the same letter “Alef” ( ا ) at any place of word, and “Taa Marbutah” ( ة ) at end of word with remove Arabic diacritical marks.
 -	**Load:** Load all data into one database which is “SoldEstate” to get benefit from them even for visualize by Power BI or predictions by ML.
 
+ <br>
 ---
 
 ## The Schedule
 The process is scheduled to be done every day until the handle of data is done.
 
-<br><br>
+<br>
 
 --- 
 
@@ -46,33 +47,36 @@ Got data from Saudi open data platform.
 
 [In-Person data files](https://open.data.gov.sa/ar/datasets/view/a7fe58bf-657d-4446-88b1-a3686a6c7e94/resources)
 
-<br><br>
+<br>
 
 ---
 
 ## Tools Used for Project
 
--	Docker: To download Apache Airflow.
--	Apache Airflow: To handle data pipeline and automate.
--	VScode: The main environment and platform that hold all files and execute python codes. 
--	SQLite: For databases.
--	Saudi Open data Platform: To get data for scenario.
+-	**Docker:** To download Apache Airflow.
+-	**Apache Airflow:** To handle data pipeline and automate.
+-	**VScode:** The main environment and platform that hold all files and execute python codes. 
+-	**SQLite:** For databases.
+-	**Saudi Open data Platform:** To get data for scenario.
 
-<br><br>
+<br>
 
 ---
 
 ## How to Download Apache Airflow into Docker?
 
 By the terminal of VScode, write command: <br>
-`curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.6/docker-compose.yaml' `
-<br>
-If you had a problem with `curl -LFo` – It appear if you use VScode version of Windows, because the terminal use PowerShell that cannot understand the command, write before the above command: <br>
-`Remove-item alias:curl` <br>
-Then make directories: <br>
- `mkdir   ./logs  ./dags   ./config   ./plugins`
-
+`       curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.6/docker-compose.yaml'                                                                                                `
 <br><br>
+
+If you had a problem with ` curl -LFo ` – It appear if you use VScode version of Windows, because the terminal use PowerShell that cannot understand the command, write before the above command: <br>
+`      Remove-item alias:curl                                                                                                                                                                ` 
+<br><br>
+
+Then make directories: <br>
+ `    mkdir   ./logs  ./dags   ./config   ./plugins                                                                                                                                          `
+
+<br>
 
 --- 
 ## Images From The Process
@@ -92,7 +96,7 @@ Then make directories: <br>
 
 ![SoldEstate database](img/soldEstate.png)
 
-<br><br>
+<br>
 
 --- 
 
