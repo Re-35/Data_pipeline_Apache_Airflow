@@ -9,6 +9,7 @@ The project continues to create data pipelines with python only.
 
 ## Scenario:
 > **Warning:** the scenario is fake.
+<br>
 “Infath” decided at end 2025 to gather all data into one database to analysis them and make better decisions for 2026 In Sha Allah. The problem is data stored into many places, so the team just want to gather data into 2 places: online and in-person, at this time it needs to create daily scheduled data pipeline that is based on ETL process.
 
 <br>
