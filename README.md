@@ -30,8 +30,8 @@ The project consists of ETL process, get benefit from abilities of Apache Airflo
 -	**Load:** Load all data into one database which is “SoldEstate” to get benefit from them even for visualize by Power BI or predictions by ML.
 
  <br>
----
 
+---
 ## The Schedule
 The process is scheduled to be done every day until the handle of data is done.
 
@@ -82,6 +82,7 @@ Then make directories: <br>
 --- 
 ## Images From The Process
 <dr>
+
 - Dag interface in Apache Airflow:
   
 ![dag interface in Apache Airflow](img/dag_interface.png)
