@@ -67,15 +67,15 @@ Got data from Saudi open data platform.
 ## How to Download Apache Airflow into Docker?
 
 By the terminal of VScode, write command: <br>
-`       curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.6/docker-compose.yaml'                                                                                                `
+`       curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.6/docker-compose.yaml'          `
 <br><br>
 
 If you had a problem with ` curl -LFo ` – It appear if you use VScode version of Windows, because the terminal use PowerShell that cannot understand the command, write before the above command: <br>
-`      Remove-item alias:curl                                                                                                                                                                ` 
+`      Remove-item alias:curl                                                                        ` 
 <br><br>
 
 Then make directories: <br>
- `    mkdir   ./logs  ./dags   ./config   ./plugins                                                                                                                                          `
+ `    mkdir   ./logs  ./dags   ./config   ./plugins                                                  `
 
 <br>
 
