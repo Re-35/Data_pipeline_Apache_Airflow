@@ -82,18 +82,18 @@ Then make directories: <br>
 --- 
 ## Images From The Process
 <dr>
--	Dag interface in Apache Airflow:
+- Dag interface in Apache Airflow:
   
 ![dag interface in Apache Airflow](img/dag_interface.png)
 
   <br><br>
   
--	Tasks flow: 
+- Tasks flow: 
 ![tasks flow](img/tasks_flow.png)
 
 <br><br>
 
--	SoldEstate database after done the process:
+- SoldEstate database after done the process:
 
 ![SoldEstate database](img/soldEstate.png)
 
